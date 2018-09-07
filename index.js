@@ -38,7 +38,7 @@ module.exports = function buildAirbnbPreset(context, options) {
         modules: false,
         targets: transpileTargets
       }),
-      require('babel-preset-react')
+      require('@babel/preset-react')
     ],
     plugins: [
       options && !!options.removePropTypes ? ['babel-plugin-transform-react-remove-prop-types', assign({

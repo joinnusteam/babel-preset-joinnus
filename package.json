@@ -1,12 +1,12 @@
 {
-  "name": "babel-preset-airbnb",
+  "name": "babel-preset-joinnus",
   "version": "2.6.0",
-  "description": "A babel preset for transforming your JavaScript for Airbnb",
+  "description": "A babel preset for transforming your JavaScript for Joinnus",
   "main": "index.js",
   "author": "Josh Perez <josh.perez@airbnb.com>",
   "repository": {
     "type": "git",
-    "url": "git@github.com:airbnb/babel-preset-airbnb.git"
+    "url": "git@github.com:joinnusteam/babel-preset-joinnus.git"
   },
   "keywords": [
     "babel",
@@ -28,7 +28,7 @@
     "babel-plugin-transform-react-remove-prop-types": "^0.4.15",
     "babel-plugin-transform-strict-mode": "^6.24.1",
     "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
+    "@babel/preset-react": "^7.0.0",
     "object.assign": "^4.1.0"
   },
   "devDependencies": {

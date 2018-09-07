@@ -1,6 +1,6 @@
-# babel-preset-airbnb
+# babel-preset-joinnus
 
-> A babel preset for transforming your JavaScript for Airbnb.
+> A babel preset for transforming your JavaScript for Joinnus.
 
 Currently contains transforms for all standard syntax that is [stage 4](https://tc39.github.io/ecma262/) (ES2018) or [stage 3](https://github.com/tc39/proposals#active-proposals), except for the following:
  - generators: `regenerator-runtime` is too heavyweight for our use.
@@ -11,7 +11,7 @@ Currently contains transforms for all standard syntax that is [stage 4](https://
 ## Install
 
 ```sh
-$ npm install --save-dev babel-preset-airbnb
+$ npm install --save-dev babel-preset-joinnus
 ```
 
 ## Usage
@@ -22,21 +22,21 @@ $ npm install --save-dev babel-preset-airbnb
 
 ```json
 {
-  "presets": ["airbnb"]
+  "presets": ["joinnus"]
 }
 ```
 
 ### Via CLI
 
 ```sh
-$ babel script.js --presets airbnb
+$ babel script.js --presets joinnus
 ```
 
 ### Via Node API
 
 ```javascript
 require("babel-core").transform("code", {
-  presets: ["airbnb"]
+  presets: ["joinnus"]
 });
 ```
 
@@ -52,7 +52,7 @@ You may override our default list of targets by providing your own `targets` key
 
 ```json
 {
-  "presets": [["airbnb", {
+  "presets": [["joinnus", {
     "targets": {
       "chrome": 50,
       "explorer": 11,
@@ -66,7 +66,7 @@ The following transpiles only for Node v6.
 
 ```json
 {
-  "presets": [["airbnb", {
+  "presets": [["joinnus", {
     "targets": {
       "node": 6
     }
@@ -78,7 +78,7 @@ If you wish, you can also inherit our default list of browsers and extend them u
 
 ```json
 {
-  "presets": [["airbnb", {
+  "presets": [["joinnus", {
     "additionalTargets": {
       "chrome": 42,
       "explorer": 8
@@ -91,7 +91,7 @@ You may override our default debug option by providing your own `debug` key.
 
 ```json
 {
-  "presets": [["airbnb", {
+  "presets": [["joinnus", {
     "debug": true
   }]]
 }
@@ -106,7 +106,7 @@ To enable this transformation with the default options, set the `removePropTypes
 
 ```json
 {
-  "presets": [["airbnb", {
+  "presets": [["joinnus", {
     "removePropTypes": true
   }]]
 }
@@ -126,7 +126,7 @@ Default options can be overridden using the `removePropTypes` option. These opti
 
 ```json
 {
-  "presets": [["airbnb", {
+  "presets": [["joinnus", {
     "removePropTypes": {
       "mode": "remove"
     }
